@@ -143,7 +143,7 @@ async def bgmi(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_id = str(update.message.from_user.id)
 
     if user_id not in users or datetime.datetime.now() > datetime.datetime.strptime(users[user_id], '%Y-%m-%d %H:%M:%S'):
-        await update.message.reply_text("❌ Access expired or unauthorized. Please redeem a valid key. Buy key from @{OWNER_USRERNAME}...")
+        await update.message.reply_text("❌ Access expired or unauthorized. Please redeem a valid key . Buy key from @Felixbbyy 🤤💋...")
         return
 
     if len(context.args) != 3:
@@ -163,7 +163,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_id = str(update.message.from_user.id)
 
     if user_id not in users or datetime.datetime.now() > datetime.datetime.strptime(users[user_id], '%Y-%m-%d %H:%M:%S'):
-        await update.message.reply_text("❌ Access expired or unauthorized. Please redeem a valid key.buy key from- @{OWNER_USRERNAME}...")
+        await update.message.reply_text("❌ Access expired or unauthorized. Please redeem a valid key . buy key from- @Felixbbyy 💋🤤...")
         return
 
     if flooding_process is not None:
@@ -175,7 +175,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         return
 
     flooding_process = subprocess.Popen(flooding_command)
-    await update.message.reply_text('Started flooding.')
+    await update.message.reply_text('𝗙𝗘𝗟𝗜𝗫 𝗩𝗜𝗣 𝗕𝗢𝗧 𝗦𝗧𝗔𝗥𝗧𝗘𝗗 😎⚡.')
 
 
 async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -183,16 +183,16 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_id = str(update.message.from_user.id)
 
     if user_id not in users or datetime.datetime.now() > datetime.datetime.strptime(users[user_id], '%Y-%m-%d %H:%M:%S'):
-        await update.message.reply_text("❌ Access expired or unauthorized. Please redeem a valid key.buy key from- @{OWNER_USRERNAME}...")
+        await update.message.reply_text("❌ Access expired or unauthorized. Please redeem a valid key . buy key from- @Felixbbyy 🌹💋...")
         return
 
     if flooding_process is None:
-        await update.message.reply_text('No flooding process is running.OWNER @{OWNER_USRERNAME}...')
+        await update.message.reply_text('No flooding process is running. OWNER @Felixbbyy ⚡...')
         return
 
     flooding_process.terminate()
     flooding_process = None
-    await update.message.reply_text('Stopped flooding.')
+    await update.message.reply_text('𝗙𝗘𝗟𝗜𝗫 𝗩𝗜𝗣 𝗦𝗧𝗢𝗣 💔💀.')
 
 
 async def broadcast(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -217,7 +217,7 @@ async def broadcast(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     response = (
-        "Welcome to the Flooding Bot by @{OWNER_USERNAME}..! Here are the available commands:\n\n"
+        "Welcome to the Flooding Bot by @Felixbbyy 🌹💋..! Here are the available commands:\n\n"
         "Admin Commands:\n"
         "/genkey <amount> <hours/days> - Generate a key with a specified validity period.\n"
         "/allusers - Show all authorized users.\n"
